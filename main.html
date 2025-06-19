@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accio Jobs</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+    </style>
 </head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl max-w-2xl w-full text-center">
+        <!-- Main heading -->
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-6 rounded-md p-2">Welcome to Accio Jobs!</h1>
 
-<body>
+        <!-- Image with specified URL and height, centered -->
+        <img
+            src="https://images.unsplash.com/photo-1505028106030-e07ea1bd80c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjYXJlZXIlMjBwYXRofGVufDB8fHx8MTY3MjMwNDEyNg&ixlib=rb-4.0.3&q=80&w=2000"
+            alt="Software Development Career Path Image"
+            height="300px"
+            class="mx-auto my-6 rounded-lg shadow-md max-w-full h-auto object-contain"
+            style="height: 300px;"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/000000?text=Image+Not+Found';"
+        />
 
-  <!-- Heading -->
-  <h1>Welcome to Accio Jobs!</h1>
+        <!-- Paragraph about development paths -->
+        <p class="text-lg text-gray-700 mb-6">5 software program developer profession paths</p>
 
-  <!-- Image -->
-  <img src="https://acciojob.com/blog/content/images/2023/07/AccioJobLogo.png" alt="Accio Jobs Logo" height="300px">
-
-  <!-- Paragraph -->
-  <p>5 software program developer profession paths</p>
-
-  <!-- Unordered List -->
-  <ul>
-    <li>Cloud development</li>
-    <li>Desktop development</li>
-    <li>Video Sport development</li>
-    <li>Mobile development</li>
-    <li>Web development</li>
-  </ul>
-
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+        <!-- Unordered list of development paths -->
+        <ul class="list-disc list-inside text-left text-gray-800 space-y-2 mx-auto max-w-md">
+            <li class="p-2 bg-blue-50 rounded-md shadow-sm">Cloud development</li>
+            <li class="p-2 bg-green-50 rounded-md shadow-sm">Desktop development</li>
+            <li class="p-2 bg-yellow-50 rounded-md shadow-sm">Video Sport development</li>
+            <li class="p-2 bg-purple-50 rounded-md shadow-sm">Mobile development</li>
+            <li class="p-2 bg-red-50 rounded-md shadow-sm">Web development</li>
+        </ul>
+    </div>
 </body>
-
 </html>
